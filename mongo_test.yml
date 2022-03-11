@@ -5,8 +5,8 @@ services:
        image: mongo
        container_name: mongodb
        environment:
-       - MONGO_INITDB_ROOT_USERNAME: admin
-       - MONGO_INITDB_ROOT_PASSWORD: publish
+       - "MONGO_INITDB_ROOT_USERNAME=admin"
+       - "MONGO_INITDB_ROOT_PASSWORD=publish"
        volumes:
           - /home/hu/temi/mongodb/database:/data/db
        ports:
